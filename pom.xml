@@ -100,8 +100,7 @@
                             </includes>
                             <stylesheet>${basedir}/src/main/xml/singletons/make-singletons.xsl</stylesheet>
                             <fileMappers>
-                                <fileMapper
-                                        implementation="org.codehaus.plexus.components.io.filemappers.MergeFileMapper">
+                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.MergeFileMapper">
                                     <targetName>Singletons.java</targetName>
                                 </fileMapper>
                             </fileMappers>
@@ -115,8 +114,7 @@
                             </includes>
                             <stylesheet>${basedir}/src/main/xml/options/make-soot-options.xsl</stylesheet>
                             <fileMappers>
-                                <fileMapper
-                                        implementation="org.codehaus.plexus.components.io.filemappers.MergeFileMapper">
+                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.MergeFileMapper">
                                     <targetName>Options.java</targetName>
                                 </fileMapper>
                             </fileMappers>
@@ -129,8 +127,7 @@
                             </includes>
                             <stylesheet>${basedir}/src/main/xml/options/ant-task.xsl</stylesheet>
                             <fileMappers>
-                                <fileMapper
-                                        implementation="org.codehaus.plexus.components.io.filemappers.MergeFileMapper">
+                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.MergeFileMapper">
                                     <targetName>AntTask.java</targetName>
                                 </fileMapper>
                             </fileMappers>
@@ -143,8 +140,7 @@
                             </includes>
                             <stylesheet>${basedir}/src/main/xml/options/phase_options_dialog.xsl</stylesheet>
                             <fileMappers>
-                                <fileMapper
-                                        implementation="org.codehaus.plexus.components.io.filemappers.MergeFileMapper">
+                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.MergeFileMapper">
                                     <targetName>PhaseOptionsDialog.java</targetName>
                                 </fileMapper>
                             </fileMappers>
@@ -157,8 +153,7 @@
                             </includes>
                             <stylesheet>${basedir}/src/main/xml/options/soot_options.xsl</stylesheet>
                             <fileMappers>
-                                <fileMapper
-                                        implementation="org.codehaus.plexus.components.io.filemappers.MergeFileMapper">
+                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.MergeFileMapper">
                                     <targetName>soot_options.htm</targetName>
                                 </fileMapper>
                             </fileMappers>
@@ -523,7 +518,7 @@
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
-            <version>1.7.5</version>
+            <version>1.7.36</version>
             <optional>true</optional>
         </dependency>
         <!-- Testing dependencies -->
@@ -609,7 +604,7 @@
         <profile>
             <id>Java11</id>
             <properties>
-                <testcase.groups.excluded></testcase.groups.excluded>
+                <testcase.groups.excluded/>
             </properties>
         </profile>
         <profile>
